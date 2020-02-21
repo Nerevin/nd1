@@ -5,15 +5,20 @@
         <meta charset="UTF-8">
         <title>Цели презентации</title>
         <link rel="stylesheet" href="css/index.css">
+        <script type="text/javascript" src="../node_modules/jquery/dist/jquery.js"></script>
         <script src="js/index.js"></script>
     </head>
     <body>
         <header class="head">
             <h1 class="head__text">общие и конкретные цели презентации</h1>
-            <figure class="head__video">
+            <figure class="head__video video-switch">
                 <img src="img/06-01-01.png" alt="video">
                 <figcaption>Посмотрите киноэпизод.</figcaption>
             </figure>
+            <div  class="video" style="display: none;">
+                <video src="video/v06.mp4" controls></video>
+                <p class="video-switch close">Закрыть</p>
+            </div>
         </header>
         <main class="main">
             <p class="main__text">
@@ -26,14 +31,14 @@
             </p>
         </main>
         <footer class="footer">
-            <figure class="button">
+            <figure class="button switch">
                 <img src="img/icon_info.png" alt="list" class="button__img">
                 <figcaption class="button__text">Примеры общих и конкретных целей</figcaption>
             </figure>
-            <section class="table">
+            <section class="table" style="display: none">
                 <div class="table-head">
                     <h2 class="table-head__header">примеры общих и конкретных целей</h2>
-                    <div class="table-head__cross"><span class="cross">X</span></div>
+                    <div class="table-head__cross switch"><span class="cross">X</span></div>
                 </div>
                 <table class="pop-up">
                     <thead>
@@ -61,8 +66,9 @@
                         </tr>
                     </tbody>
                 </table>
-                <button class="button-cont">Продолжить</button>
+                <button class="button-cont switch">Продолжить</button>
             </section>
         </footer>
     </body>
+    <div class="tytoknoall"></div>
 </html>

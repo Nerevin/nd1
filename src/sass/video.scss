@@ -1,0 +1,16 @@
+.video {
+    position: absolute;
+    top: 5%;
+    left: 15%;
+    
+    z-index: 999992;
+}
+
+.close {
+    display: flex;
+    justify-content: center;
+
+    background-color: white;
+
+    cursor: pointer;
+}
