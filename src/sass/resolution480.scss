@@ -1,0 +1,10 @@
+@media (max-width: 768px) {
+    .head__text {
+        display: inline-block;
+        background-color: rgba(255, 255, 255, 0.85);
+    }
+
+    .main, .footer {
+        width: 95%
+    }
+}
