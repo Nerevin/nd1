@@ -6,9 +6,13 @@
 }
 * {
   margin: 0;
+  font-family: "Verdana";
+  font-weight: normal;
+  color: #000000;
 }
 
 body {
+  height: 100%;
   background-image: url(../img/12_03.jpg);
   background-size: cover;
 }
@@ -17,11 +21,8 @@ body {
   margin-top: 15px;
   margin-left: 10px;
   margin-bottom: 10px;
-  font-family: "Verdana";
-  font-weight: normal;
   font-size: 20pt;
   line-height: 27px;
-  color: #000000;
   text-transform: uppercase;
 }
 .head__text::before {
@@ -40,7 +41,6 @@ body {
   width: 220px;
   height: 200px;
   margin-left: 20px;
-  font-family: "Verdana";
   font-style: italic;
   font-size: 14px;
   color: #666666;
@@ -56,11 +56,9 @@ body {
 }
 .main__text {
   padding: 2%;
-  font-family: "Verdana";
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
-  color: #000000;
 }
 .main__text_pink {
   font-weight: bold;
@@ -83,20 +81,25 @@ body {
   margin: 5px 30px;
 }
 .button__text {
-  font-family: "Verdana";
   font-weight: bold;
   font-size: 16px;
   line-height: 21px;
   color: #B5065E;
 }
 
-.table {
+.pop-up {
   position: absolute;
   top: 5%;
   left: 15%;
+  right: 15%;
   display: inline-block;
   background-color: white;
-  z-index: 999992;
+  z-index: 2;
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
 }
 
 .table-head {
@@ -105,10 +108,8 @@ body {
   justify-content: center;
   align-items: center;
   margin-bottom: 10px;
-  padding-top: 15px;
 }
 .table-head__header {
-  font-family: "Verdana";
   font-weight: bold;
   font-size: 16px;
   line-height: 21px;
@@ -117,7 +118,6 @@ body {
 }
 .table-head__cross {
   position: absolute;
-  top: 5px;
   right: 15px;
   display: flex;
   justify-content: center;
@@ -138,16 +138,15 @@ body {
 
 .table-row {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .table-cell, .table-cell__pink {
   display: flex;
   align-items: center;
-  width: 318px;
+  width: 45%;
   padding: 15px 10px;
   margin: 0 10px 10px 0;
-  font-family: "Verdana";
   font-size: 16px;
   background-color: #f0f0f0;
 }
@@ -165,7 +164,6 @@ body {
   height: 40px;
   margin-left: 10px;
   margin-bottom: 10px;
-  font-family: "Verdana";
   font-size: 16px;
   text-transform: uppercase;
   color: white;
@@ -189,7 +187,7 @@ body {
   -moz-opacity: 0.8;
   background: #000;
   cursor: pointer;
-  z-index: 999990;
+  z-index: 1;
 }
 
 @media (max-width: 768px) {
@@ -206,7 +204,10 @@ body {
   position: absolute;
   top: 5%;
   left: 15%;
-  z-index: 999992;
+  right: 15%;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
 }
 
 .close {

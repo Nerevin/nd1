@@ -1,13 +1,19 @@
-.table {
+.pop-up {
     position: absolute;
     top: 5%;
     left: 15%;
+    right: 15%;
     
     display: inline-block;
 
     background-color: white;
 
-    z-index: 999992;
+    z-index: 2;
+}
+
+.table {
+    display: flex;
+    flex-direction: column;
 }
 
 .table-head {
@@ -17,10 +23,8 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 10px;
-    padding-top: 15px;
 
     &__header {
-        font-family: 'Verdana';
         font-weight: bold;
         font-size: 16px;
         line-height: 21px;
@@ -30,7 +34,6 @@
 
     &__cross {
         position: absolute;
-        top: 5px;
         right: 15px;
 
         display: flex;
@@ -56,17 +59,16 @@
 
 .table-row {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .table-cell, .table-cell__pink {
     display: flex;
     align-items: center;
-    width: 318px;
+    width: 45%;
     padding: 15px 10px;
     margin: 0 10px 10px 0;
 
-    font-family: 'Verdana';
     font-size: 16px;
 
     background-color: rgb(240, 240, 240);
@@ -86,7 +88,6 @@
     margin-left: 10px;
     margin-bottom: 10px;
 
-    font-family: 'Verdana';
     font-size: 16px;
     text-transform: uppercase;
     color: white;
@@ -113,5 +114,5 @@
     -moz-opacity: 0.8;
     background: #000;
     cursor: pointer;
-    z-index: 999990;
+    z-index: 1;
 }

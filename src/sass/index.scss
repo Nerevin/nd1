@@ -6,18 +6,21 @@
 }
 
 @mixin mainFont {
-    font-family: 'Verdana';
-    font-weight: normal;
     font-size: 20pt;
     line-height: 27px;
-    color: #000000;
 }
 
 * {
     margin: 0;
+
+    font-family: 'Verdana';
+    font-weight: normal;
+    color: #000000;
 }
 
 body {
+    height: 100%;
+    
     background-image: url(../img/12_03.jpg);
     background-size: cover;
 }
@@ -52,7 +55,6 @@ body {
         height: 200px;
         margin-left: 20px;
 
-        font-family: 'Verdana';
         font-style: italic;
         font-size: 14px;
         color: #666666;
@@ -73,11 +75,9 @@ body {
     &__text {
         padding: 2%;
 
-        font-family: 'Verdana';
         font-weight: 400;
         font-size: 16px;
         line-height: 21px;
-        color: #000000;
 
         &_pink {
             font-weight: bold;
@@ -105,7 +105,6 @@ body {
     }
 
     &__text {
-        font-family: 'Verdana';
         font-weight: bold;
         font-size: 16px;
         line-height: 21px;
